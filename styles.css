@@ -1,0 +1,52 @@
+body {
+  background-color: lightgray;
+}
+
+h1 {
+  display:flex;
+  justify-content: center;
+  margin: 5% auto;
+}
+
+.hoveredCell {
+  background-color: black;
+}
+
+.btnContainer {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.resetButton, .changeSize, .eraser, .rainbow{
+  display: flex;
+  background-color: white;
+  font-size: 20px;
+  padding: 1% 2%;
+  border-radius: 4px;
+}
+
+.rainbow {
+  color: #ff73a9;
+  font-weight: bold;
+  border: 2px solid #ff73a9;
+}
+
+.resetButton {
+  color: red;
+  border: 2px solid #e00000;
+}
+
+.eraser {
+  color: #575757;
+  border: 2px solid #575757;
+}
+
+.resetButton:active, .changeSize:active, .eraser:active, .eraserOn, .rainbow:active, .rainbowOn {
+  border: 3px solid; 
+  margin: -1px;
+}
+
+.resetButton:active span, .changeSize:active span, .eraser:active span, .eraserOn span, .rainbow:active span, .rainbowOn span {
+  transform: translateY(.1em);
+}
